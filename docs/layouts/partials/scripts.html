@@ -5,7 +5,7 @@
   var searchInput = document.querySelector('#icons-body input#search')
   var filter = new URLSearchParams(window.location.search).get('filter')
   var iconList = new List('icons-body', {
-    valueNames: ['name', { data: ['tags'] }]
+    valueNames: ['name', { data: ['tags', 'categories'] }]
   })
 
   if (filter !== null) {
